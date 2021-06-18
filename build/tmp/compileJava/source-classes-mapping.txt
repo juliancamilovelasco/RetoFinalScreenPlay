@@ -1,0 +1,42 @@
+com/practice/automationtesting/automation/models/Data.java
+ com.practice.automationtesting.automation.models.Data
+com/practice/automationtesting/automation/userInterfaces/PracticeShopHome.java
+ com.practice.automationtesting.automation.userInterfaces.PracticeShopHome
+com/practice/automationtesting/automation/userInterfaces/AndroidQuickStartGuideHomePage.java
+ com.practice.automationtesting.automation.userInterfaces.AndroidQuickStartGuideHomePage
+com/practice/automationtesting/automation/questions/VerifyOrderQuantityBooks.java
+ com.practice.automationtesting.automation.questions.VerifyOrderQuantityBooks
+com/practice/automationtesting/automation/tasks/ProceedToCheckout.java
+ com.practice.automationtesting.automation.tasks.ProceedToCheckout
+com/practice/automationtesting/automation/interactions/Call.java
+ com.practice.automationtesting.automation.interactions.Call
+com/practice/automationtesting/automation/userInterfaces/ProceedToCheckoutHomePage.java
+ com.practice.automationtesting.automation.userInterfaces.ProceedToCheckoutHomePage
+com/practice/automationtesting/automation/userInterfaces/practiceHomePage.java
+ com.practice.automationtesting.automation.userInterfaces.practiceHomePage
+com/practice/automationtesting/automation/userInterfaces/BillingDetailsHomePage.java
+ com.practice.automationtesting.automation.userInterfaces.BillingDetailsHomePage
+com/practice/automationtesting/automation/questions/ThankYou.java
+ com.practice.automationtesting.automation.questions.ThankYou
+com/practice/automationtesting/automation/userInterfaces/VerifyOrderHomePage.java
+ com.practice.automationtesting.automation.userInterfaces.VerifyOrderHomePage
+com/practice/automationtesting/automation/tasks/OpenTheBrowser.java
+ com.practice.automationtesting.automation.tasks.OpenTheBrowser
+com/practice/automationtesting/automation/userInterfaces/ThankYouHomePage.java
+ com.practice.automationtesting.automation.userInterfaces.ThankYouHomePage
+com/practice/automationtesting/automation/tasks/Login.java
+ com.practice.automationtesting.automation.tasks.Login
+com/practice/automationtesting/automation/tasks/SelectTwoBooks.java
+ com.practice.automationtesting.automation.tasks.SelectTwoBooks
+com/practice/automationtesting/automation/questions/IsNotRegistered.java
+ com.practice.automationtesting.automation.questions.IsNotRegistered
+com/practice/automationtesting/automation/tasks/BillingDetails.java
+ com.practice.automationtesting.automation.tasks.BillingDetails
+com/practice/automationtesting/automation/tasks/SelectBookToBuy.java
+ com.practice.automationtesting.automation.tasks.SelectBookToBuy
+com/practice/automationtesting/automation/userInterfaces/MyAccountHomePage.java
+ com.practice.automationtesting.automation.userInterfaces.MyAccountHomePage
+com/practice/automationtesting/automation/tasks/ClickMy.java
+ com.practice.automationtesting.automation.tasks.ClickMy
+com/practice/automationtesting/automation/tasks/PaymentMethod.java
+ com.practice.automationtesting.automation.tasks.PaymentMethod

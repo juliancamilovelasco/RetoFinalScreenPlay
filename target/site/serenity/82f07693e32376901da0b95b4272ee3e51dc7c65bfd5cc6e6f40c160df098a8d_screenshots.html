@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.19/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="895f0682d9d96e1d32639b9db787fc41370ff89f8f24b84eceaf71c8356d8bbc.html">Buy A Book</a></span>
+                > <span class="truncate-60"><a
+                    href="82f07693e32376901da0b95b4272ee3e51dc7c65bfd5cc6e6f40c160df098a8d.html"> </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-06-2021 22:47</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Buy A Book</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a web user
+I want to Buy a Book in practiceAutomationTesting.com
+to me
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given that Julian want to buy a book 2 Items<br>When he selects two books<br><table class='embedded'><thead><th>firstName</th><th>lastName</th><th>emailAddress</th><th>phone</th><th>address</th><th>city</th><th>country</th></thead><tbody><tr><td>&lt;firstName&gt;</td><td>&lt;lastName&gt;</td><td>&lt;emailAddress&gt;</td><td>&lt;phone&gt;</td><td>&lt;address&gt;</td><td>&lt;city&gt;</td><td>&lt;country&gt;</td></tr></tbody></table><br>Then He should see Thank you. Your order has been received.</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="23d7f0e053b445aa73f9bcac3dd330aecb4963beadf063124fe49ee521d20082.png" title=" Example: {firstName=julian, lastName=velasco, emailAddress=julian@gmail.com, phone=12345, address=abcde12345, city=bogota, country=colombia}" width="1034"/>
+                <img src="23d7f0e053b445aa73f9bcac3dd330aecb4963beadf063124fe49ee521d20082.png" title=" Given that Julian want to buy a book 2 Items" width="1034"/>
+                <img src="23d7f0e053b445aa73f9bcac3dd330aecb4963beadf063124fe49ee521d20082.png" title=" julian opens the browser on Google Home Page" width="1034"/>
+                <img src="23d7f0e053b445aa73f9bcac3dd330aecb4963beadf063124fe49ee521d20082.png" title=" julian opens the Practice home page" width="1034"/>
+                <img src="23d7f0e053b445aa73f9bcac3dd330aecb4963beadf063124fe49ee521d20082.png" title=" julian opens the browser on Google Home Page (completed)" width="1034"/>
+                <img src="23d7f0e053b445aa73f9bcac3dd330aecb4963beadf063124fe49ee521d20082.png" title=" Julian select book to buy" width="1034"/>
+                <img src="23d7f0e053b445aa73f9bcac3dd330aecb4963beadf063124fe49ee521d20082.png" title=" julian clicks on Book Android" width="1034"/>
+                <img src="ac96325242d4de711c702b3f95b1da1e1682d4b442643df54d0ee0c11b10a111.png" title=" julian clicks on Book Android (completed)" width="1034"/>
+                <img src="ac96325242d4de711c702b3f95b1da1e1682d4b442643df54d0ee0c11b10a111.png" title=" Julian select book to buy (completed)" width="1034"/>
+                <img src="ac96325242d4de711c702b3f95b1da1e1682d4b442643df54d0ee0c11b10a111.png" title=" Julian select two books" width="1034"/>
+                <img src="ac96325242d4de711c702b3f95b1da1e1682d4b442643df54d0ee0c11b10a111.png" title=" julian enters '2' into Select Two Books" width="1034"/>
+                <img src="004e21f9b0240b35cc235686eaccb41e471364177854236934ee9efdcd83099d.png" title=" julian enters '2' into Select Two Books (completed)" width="1034"/>
+                <img src="004e21f9b0240b35cc235686eaccb41e471364177854236934ee9efdcd83099d.png" title=" julian clicks on Add To Basket" width="1034"/>
+                <img src="e9478026f7c9f2cd5d4bde704273258b102b1133eed42a4cd94d3777ec8a44c5.png" title=" julian clicks on Add To Basket (completed)" width="1034"/>
+                <img src="e9478026f7c9f2cd5d4bde704273258b102b1133eed42a4cd94d3777ec8a44c5.png" title=" julian clicks on View Basket" width="1034"/>
+                <img src="60cd1b43322b357bb298ab56710327db4b0b3d5631a3112327fd9a95e806d61b.png" title=" julian clicks on View Basket (completed)" width="1034"/>
+                <img src="60cd1b43322b357bb298ab56710327db4b0b3d5631a3112327fd9a95e806d61b.png" title=" Julian select two books (completed)" width="1034"/>
+                <img src="60cd1b43322b357bb298ab56710327db4b0b3d5631a3112327fd9a95e806d61b.png" title=" Julian proceed to checkout" width="1034"/>
+                <img src="60cd1b43322b357bb298ab56710327db4b0b3d5631a3112327fd9a95e806d61b.png" title=" Then verify order quantity books" width="1034"/>
+                <img src="60cd1b43322b357bb298ab56710327db4b0b3d5631a3112327fd9a95e806d61b.png" title=" Then verify order quantity books (completed)" width="1034"/>
+                <img src="60cd1b43322b357bb298ab56710327db4b0b3d5631a3112327fd9a95e806d61b.png" title=" julian clicks on Proceed To Checkout" width="1034"/>
+                <img src="7b3ce12190d14661f73a5d16bdc151f55a72086b9801e701167f3d40d6d5087e.png" title=" julian clicks on Proceed To Checkout (completed)" width="1034"/>
+                <img src="7b3ce12190d14661f73a5d16bdc151f55a72086b9801e701167f3d40d6d5087e.png" title=" Julian proceed to checkout (completed)" width="1034"/>
+                <img src="7b3ce12190d14661f73a5d16bdc151f55a72086b9801e701167f3d40d6d5087e.png" title=" Given that Julian want to buy a book 2 Items (completed)" width="1034"/>
+                <img src="7b3ce12190d14661f73a5d16bdc151f55a72086b9801e701167f3d40d6d5087e.png" title=" When he selects two books
+| firstName | lastName | emailAddress | phone | address | city | country |
+| julian | velasco | julian@gmail.com | 12345 | abcde12345 | bogota | colombia |" width="1034"/>
+                <img src="7b3ce12190d14661f73a5d16bdc151f55a72086b9801e701167f3d40d6d5087e.png" title=" julian enters 'julian' into First Name" width="1034"/>
+                <img src="216943993aa3b5a8a5b5045feb8b721d28b05ad49f22ce54ed8497707d1f5794.png" title=" julian enters 'julian' into First Name (completed)" width="1034"/>
+                <img src="216943993aa3b5a8a5b5045feb8b721d28b05ad49f22ce54ed8497707d1f5794.png" title=" julian enters 'velasco' into Last Name" width="1034"/>
+                <img src="bc9a67e5392d71c523c4e2e784c28c52019f48107137426f780443549a73fa0a.png" title=" julian enters 'velasco' into Last Name (completed)" width="1034"/>
+                <img src="bc9a67e5392d71c523c4e2e784c28c52019f48107137426f780443549a73fa0a.png" title=" julian enters 'julian@gmail.com' into Email Address" width="1034"/>
+                <img src="68445b81816b54c75109277674521c58e0871e29520c6a094358c895249a0cc1.png" title=" julian enters 'julian@gmail.com' into Email Address (completed)" width="1034"/>
+                <img src="68445b81816b54c75109277674521c58e0871e29520c6a094358c895249a0cc1.png" title=" julian enters '12345' into Phone" width="1034"/>
+                <img src="9ccd6835066fe42fecf1e55a6c6d1a1f0ad34afd31f474934b6b390f27f1ec55.png" title=" julian enters '12345' into Phone (completed)" width="1034"/>
+                <img src="9ccd6835066fe42fecf1e55a6c6d1a1f0ad34afd31f474934b6b390f27f1ec55.png" title=" julian enters 'abcde12345' into Address" width="1034"/>
+                <img src="b62fc02d853e47f9a7b8f7cb88c1e3c8ea14669a00e50c35bd41d8ec1255a15b.png" title=" julian enters 'abcde12345' into Address (completed)" width="1034"/>
+                <img src="b62fc02d853e47f9a7b8f7cb88c1e3c8ea14669a00e50c35bd41d8ec1255a15b.png" title=" julian enters 'bogota' into City" width="1034"/>
+                <img src="142ade836b9d12782361f8fc7cbe8bd4951b3f67cc76fd7cc7af4f2977c2e9d6.png" title=" julian enters 'bogota' into City (completed)" width="1034"/>
+                <img src="142ade836b9d12782361f8fc7cbe8bd4951b3f67cc76fd7cc7af4f2977c2e9d6.png" title=" julian enters 'colombia' into Country" width="1034"/>
+                <img src="54e45a6ee43228957112ed55d1985d4368043956efb2d00bf6c8fde1b0148c81.png" title=" julian enters 'colombia' into Country (completed)" width="1034"/>
+                <img src="54e45a6ee43228957112ed55d1985d4368043956efb2d00bf6c8fde1b0148c81.png" title=" Julian payment method" width="1034"/>
+                <img src="54e45a6ee43228957112ed55d1985d4368043956efb2d00bf6c8fde1b0148c81.png" title=" julian clicks on Bank Option" width="1034"/>
+                <img src="09efcced17cbf96626ed4cdcce85263ce3eceda70fede8e8e904268d779dad75.png" title=" julian clicks on Bank Option (completed)" width="1034"/>
+                <img src="09efcced17cbf96626ed4cdcce85263ce3eceda70fede8e8e904268d779dad75.png" title=" julian clicks on Place Order" width="1034"/>
+                <img src="0db61b9f8649c1f70ea395662ddfac1c9b35591d4b8ac07ce7010e3591fa5ef6.png" title=" julian clicks on Place Order (completed)" width="1034"/>
+                <img src="e181c7570e7dfb70888bd00445158ebe2659ca2329f14d78c08e2e3a10d6192d.png" title=" Julian payment method (completed)" width="1034"/>
+                <img src="e181c7570e7dfb70888bd00445158ebe2659ca2329f14d78c08e2e3a10d6192d.png" title=" When he selects two books
+| firstName | lastName | emailAddress | phone | address | city | country |
+| julian | velasco | julian@gmail.com | 12345 | abcde12345 | bogota | colombia | (completed)" width="1034"/>
+                <img src="e181c7570e7dfb70888bd00445158ebe2659ca2329f14d78c08e2e3a10d6192d.png" title=" Then He should see Thank you. Your order has been received." width="1034"/>
+                <img src="e181c7570e7dfb70888bd00445158ebe2659ca2329f14d78c08e2e3a10d6192d.png" title=" Then thank you" width="1034"/>
+                <img src="e181c7570e7dfb70888bd00445158ebe2659ca2329f14d78c08e2e3a10d6192d.png" title=" Then thank you (completed)" width="1034"/>
+                <img src="e181c7570e7dfb70888bd00445158ebe2659ca2329f14d78c08e2e3a10d6192d.png" title=" Then He should see Thank you. Your order has been received. (completed)" width="1034"/>
+                <img src="e181c7570e7dfb70888bd00445158ebe2659ca2329f14d78c08e2e3a10d6192d.png" title=" Example: {firstName=julian, lastName=velasco, emailAddress=julian@gmail.com, phone=12345, address=abcde12345, city=bogota, country=colombia} (completed): <span class='success-color'>SUCCESS</span>" width="1034"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.1.0</span>
+</div>
+</body>
+</html>
